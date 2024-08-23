@@ -8,6 +8,7 @@ This is a template repository</h3>
     <a href="https://github.com/crislainesc">
       <img alt="Made by Crislaine" src="https://img.shields.io/badge/solved%20by-Crislâine%20Santos-blueviolet?style=plastic">
     </a>
+   <br/>
     <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/crislainesc/template?color=blue&style=plastic">
     <img alt="Repository size" src="https://img.shields.io/github/repo-size/crislainesc/template?style=plastic"/>
     <a href="https://opensource.org/licenses/MIT">
