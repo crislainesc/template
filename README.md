@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1> <img alt="code-image" width="1100px" src=".github/workflows/banner.jpeg"> </h1>
+  <h1> <img alt="code-image" width="1100px" src=".github/workflows/assets/banner.jpeg"> </h1>
   <h2> Template </h2>
   <h3>
 This is a template repository</h3>
