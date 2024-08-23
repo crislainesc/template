@@ -29,9 +29,8 @@ jobs:
         FORMATTED_NAME=$(echo "$REPO_NAME" | sed -e 's/_/ /g' -e 's/\b\(.\)/\u\1/g')
         echo "::set-output name=formatted::${FORMATTED_NAME}"
 
-    - name: Clean and Generate README
+    - name: Clean Existing README.md
       run: |
-        # Remove the existing README.md file
         rm -f README.md
 
     - name: Generate README
@@ -41,7 +40,7 @@ jobs:
 
         echo '' >> README.md
         echo '<div align="center">' >> README.md
-        echo '  <h1> <img alt="code-image" width="1100px" src=".github/workflows/banner.jpeg"> </h1>' >> README.md
+        echo '  <h1> <img alt="code-image" width="1100px" src=".github/workflows/assets/banner.jpeg"> </h1>' >> README.md
         echo "  <h2> ${FORMATTED_NAME} </h2>" >> README.md
         
         echo '  <h3>' >> README.md
@@ -91,6 +90,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git pull origin main
         git add README.md
         git commit -m "Update README"
         git push origin main
