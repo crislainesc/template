@@ -51,6 +51,7 @@ jobs:
         echo '    <a href="https://github.com/crislainesc">' >> README.md
         echo '      <img alt="Made by Crislaine" src="https://img.shields.io/badge/solved%20by-Crislâine%20Santos-blueviolet?style=plastic">' >> README.md
         echo '    </a>' >> README.md
+        echo '   <br/>' >> README.md
 
         echo '    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/crislainesc/'${REPO_NAME}'?color=blue&style=plastic">' >> README.md
         echo '    <img alt="Repository size" src="https://img.shields.io/github/repo-size/crislainesc/'${REPO_NAME}'?style=plastic"/>' >> README.md
