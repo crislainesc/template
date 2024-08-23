@@ -29,6 +29,11 @@ jobs:
         FORMATTED_NAME=$(echo "$REPO_NAME" | sed -e 's/_/ /g' -e 's/\b\(.\)/\u\1/g')
         echo "::set-output name=formatted::${FORMATTED_NAME}"
 
+    - name: Clean and Generate README
+      run: |
+        # Remove the existing README.md file
+        rm -f README.md
+
     - name: Generate README
       run: |
         REPO_NAME="${{ steps.repo-name.outputs.name }}"
