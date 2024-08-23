@@ -41,7 +41,7 @@ jobs:
         echo "  <h2> ${FORMATTED_NAME} </h2>" >> README.md
         
         echo '  <h3>' >> README.md
-        cat ./project_description.txt >> README.md >> README.md
+        cat .github/workflows/project_description.txt >> README.md >> README.md
         echo '</h3>' >> README.md
         
         echo '  <p>' >> README.md
@@ -60,19 +60,19 @@ jobs:
         echo '' >> README.md
 
         echo '### 📖 About the project' >> README.md
-        cat ./about.txt >> README.md
+        cat .github/workflows/about.txt >> README.md
         echo '' >> README.md
 
         echo '### ✨ Features' >> README.md
-        cat ./features.txt >> README.md
+        cat .github/workflows/features.txt >> README.md
         echo '' >> README.md
 
         echo '### 💻 Technologies' >> README.md
-        cat ./technologies.txt >> README.md
+        cat .github/workflows/technologies.txt >> README.md
         echo '' >> README.md
 
         echo '### ▶️ Running The Project' >> README.md
-        cat ./running.txt >> README.md
+        cat .github/workflows/running.txt >> README.md
         echo '' >> README.md
 
         echo '### 📝 License' >> README.md
