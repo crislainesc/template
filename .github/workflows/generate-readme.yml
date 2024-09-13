@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Generate README
-      uses: crislainesc/actions/.github/actions/generate-readme@main
+      uses: crislainesc/actions/.github/workflows/generate-readme@main
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         repo_name: ${{ github.repository }}
