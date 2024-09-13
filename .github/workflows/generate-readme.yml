@@ -6,13 +6,9 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Generate README
-      uses: crislainesc/actions/.github/workflows/generate-readme@main
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repo_name: ${{ github.repository }}
-        repo_owner: ${{ github.repository_owner }}
+  generate-readme:
+    uses: crislainesc/actions/.github/workflows/generate-readme.yml@main
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      repo_name: ${{ github.repository }}
+      repo_owner: ${{ github.repository_owner }}
