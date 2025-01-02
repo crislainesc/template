@@ -11,4 +11,4 @@ jobs:
     secrets: inherit
     with:
       repo_name: ${{ github.repository }}
-      repo_owner: crislainesc
+      repo_owner: ${{ github.repository_owner }}
